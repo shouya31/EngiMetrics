@@ -104,6 +104,9 @@ GEM
     erubi (1.12.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.2.1)
@@ -130,6 +133,7 @@ GEM
     mini_portile2 (2.8.4)
     minitest (5.20.0)
     msgpack (1.7.2)
+    multi_xml (0.6.0)
     mutex_m (0.1.2)
     mysql2 (0.5.5)
     net-imap (0.4.0)
@@ -209,6 +213,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sidekiq (7.1.5)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.14.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -251,6 +260,7 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
+  httparty
   importmap-rails
   jbuilder
   mysql2 (~> 0.5)
@@ -258,6 +268,7 @@ DEPENDENCIES
   rails (~> 7.1.0)
   redis (>= 4.0.1)
   selenium-webdriver
+  sidekiq
   sprockets-rails
   stimulus-rails
   turbo-rails
